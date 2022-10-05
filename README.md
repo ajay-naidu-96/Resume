@@ -1,2 +1,6 @@
 # Resume
-template files for my resume updates
+LaTex template files for my personal resume
+
+Based off of [sb2nov/resume](https://github.com/sb2nov/resume/)
+
+![Resume Preview](resume.png)
