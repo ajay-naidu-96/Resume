@@ -1,0 +1,187 @@
+%-------------------------
+% Resume in Latex
+% Author : Ajay G
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Ajay G} \\ \vspace{1pt}
+    \small +91-8971283294 $|$ \href{mailto:ajaynaidu96@outlook.com}{\underline{ajaynaidu96@outlook.com}} $|$ 
+    \href{https://www.linkedin.com/in/ajaynaidu96/}{\underline{linkedin.com/in/ajaynaidu96}} $|$
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {SparkCognition}{Bangalore, India}
+      {AI Architect (VAIA Team)}{Dec 2021 -- Present}
+      \resumeSubSubheading
+        {AI Lead}{Jun 2021 -- Dec 2021}
+      \resumeSubSubheading
+        {Senior AI Engineer}{Jul 2020 -- Jun 2021}
+      \resumeSubSubheading
+        {AI Engineer}{Aug 2019 -- Jul 2020}
+          \resumeItemListStart
+            \resumeItem{Designed and built the Vision AI inference pipeline, which is now used in over 200+ banking and retail locations.}
+            \resumeItem{Delivered a solution that assisted in preventing theft from a banking institution, resulting in them saving assets worth several thousand dollars.}
+            \resumeItem{Was a key member of the VAIA R\&D team responsible for improving the vision AI inference pipeline as well as training and developing custom vision AI models.}
+            \resumeItem{Was in charge of delivering vision analytics to recognize footfall patterns to the largest shopping mall chains in India at high accuracies (95+).}
+            \resumeItem{Developed a Vision AI solution to aid in serveillance at one of the world's largest banks and a Fortune 500 Company.}
+            \resumeItem{Implemented an inference technique that improved the accuracy of the neural network model by more than 20\%.}
+          \resumeItemListEnd
+
+      \resumeSubheading
+      {Entropik Tech}{Bangalore, India} 
+      {CV Intern}{Aug 2018 -- Jan 2019}
+      \resumeItemListStart
+        \resumeItem{helped improve the emotion recognition pipeline}
+        \resumeItem{trained and improved existing machine learning classifiers(SVM) for emotion classification.}
+        \resumeItem{worked towards improving the eye tracking pipeline.}
+        \resumeItem{Performed statistical analysis on facial coding benchmark data.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {SJB Institute of Technology}{Bangalore, India}
+    {Bachelor of Engineering in Computer Science}{Aug 2014 -- May 2018}
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Academic Project}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Pose Estimation of Autonomous Vehicles} $|$ \emph{Python, Keras, PCL}}{}
+          \resumeItemListStart
+            \resumeItem{Trained a regression neural network similar to VGG16 for scene flow estimation using 3D Point Cloud Data}
+            \resumeItem{Wrote custom data loaders for feeding inputs to the neural network in keras}
+            \resumeItem{Visualized the data using Point Cloud Library (PCL)}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------Technical SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Operating System}{: ArchLinux, Ubuntu, Windows} \\
+     \textbf{Languages}{: C++, Python, C} \\
+     \textbf{Frameworks & SDK}{: Pytorch, Keras, TensorRT, Deepstream, Flask} \\
+     \textbf{Developer Tools}{: Git, AWS, VS Code, Atom, LaTeX} \\
+     \textbf{Libraries}{: Pandas, Scikit, OpenCV, Dlib} \\
+     \textbf{Certifications}{: Nvidia Jetson AI Specialist}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
