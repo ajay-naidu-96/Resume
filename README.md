@@ -11,10 +11,15 @@ Based off of [sb2nov/resume](https://github.com/sb2nov/resume/)
 sudo pacman -S texlive-core texlive-formatsextra texlive-latexextra
 ```
 
-### Comile to PDF
+### Compile to PDF
 
 ```bash
 pdflatex ajay_resume.tex
 ```
 
+### Compile to JPG
+
+```bash
+magick -density 300 ajay_resume.pdf resume.jpg
+```
 ![Resume Preview](resume.jpg)
