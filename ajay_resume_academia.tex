@@ -1,0 +1,206 @@
+%-------------------------
+% Resume in Latex
+% Author : Ajay G
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Ajay Gopi} \\ \vspace{1pt}
+    \small (+1) 585 498 8027 $|$ \href{mailto:ajaynaidu96@outlook.com}{\underline{ajaynaidu96@outlook.com}} $|$ 
+    \href{https://www.linkedin.com/in/ajaynaidu96/}{\underline{linkedin.com/in/ajaynaidu96}} $|$
+    \href{https://github.com/ajay-naidu-96/}{\underline{github.com/ajay-naidu-96}}
+\end{center}
+
+%-----------Objective-----------
+
+\section{Objective}
+AI researcher with industry experience in production-grade machine learning solutions, aiming to advance representation finetuning and latent space optimization for real-world applications in generative modeling and building robust AI systems in academic or collaborative lab environments.
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Rochester Institute of Technology}{Rochester, USA}
+    {Master of Science in Artificial Intelligence}{Aug 2024 -- Dec 2025(exp)}
+  \resumeSubheading
+    {Visvesvaraya Technological University}{Bangalore, India}
+    {Bachelor of Engineering in Computer Science}{Aug 2014 -- July 2018}
+    \resumeSubSubheading
+      {Grade: First Class With Distinction}{Avg: 71.3\%}
+\resumeSubHeadingListEnd
+
+  %-----------Technical SKILLS-----------
+  \section{Technical Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+      \small{\item{
+      \textbf{Operating System}{: ArchLinux, Ubuntu, Windows} \\
+      \textbf{Languages}{: C++, Python, C} \\
+      \textbf{Frameworks \& SDK}{: Pytorch, Keras, TensorRT, Deepstream, Flask, Pandas, Scikit, OpenCV, Dlib} \\
+      \textbf{Certifications}{: Nvidia Jetson AI Specialist}
+      }}
+    \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Computation Biomedicine Lab, RIT}{Rochester, USA}
+        {Graduate Research Assistant, Advisor: Prof. Linwei Wang}{Nov 2024 -- Present}  
+          \resumeItemListStart
+            \resumeItem{Conducting an independent study on evaluating existing causal generative models on datasets known to exhibiting bias.}
+            \resumeItem{Current Research Interests: Causal Inference, Representation Learning}
+          \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Avathon}{Austin, USA}
+      {AI Architect}{Aug 2019 -- Aug 2024}
+      \resumeItemListStart
+        \resumeItem{Promoted 4 times within 5 years, taking on increased responsibilities in development and leadership roles.}
+        \resumeItem{Designed and built the Visual AI Advisor (VAIA) edge inference pipeline, currently live across 1000+ banking and retail locations.}
+        \resumeItem{Implemented a variation of stacked model inference technique, improving object detection model accuracy by over 20\% on downstream tasks.}
+        \resumeItem{Optimized computer vision models for both ARM-based and x86 architectures, improving perforformance and efficiency for edge computing applications.}
+        \resumeItem{Implemented dynamic control logic for several downstream computer vision tasks, including HSE compliance monitoring, footfall recognition, and fire detection.}
+        \resumeItem{Managed and delivered multiple projects, overseeing timelines, gathering customer requirements, and ensuring successful outcomes across diverse computer vision applications.}
+        \resumeItem{Led the implementation of vision analytics to recognize footfall patterns for the largest shopping mall chain in India, achieving over 95\% accuracy.}
+        \resumeItem{Developed vision AI solution to enhance surveillance capabilities for one of the world's largest banks.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Entropik Tech}{Bangalore, India}
+      {Computer Vision Intern}{July 2018 -- Jan 2019}
+      \resumeItemListStart
+        \resumeItem{Contributed to their patented facial coding technology to recognize human emotions and human eye tracking.}
+        \resumeItem{Automated facial action unit (AU) extraction using keypoints obtained from facial landmarks.}
+        \resumeItem{Used support vector machine (SVM) algorithms to classifiy facial action units for human facial expression recognition.}
+        \resumeItem{Introduced tracker based mechanism in the facial coding pipeline leading to reduced inference costs and sped-up the pipeline by 50\%}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Academic Project}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Scene Flow Estimation of Autonomous Vehicles} $|$ \emph{Python, Keras, PCL}}{}
+          \resumeItemListStart
+            \resumeItem{Trained a regression neural network based off of VGG16 for scene flow estimation using 3D Point Clouds.}
+            \resumeItem{Implemented custom data loaders for feeding inputs to the neural network in keras.}
+            \resumeItem{Visualized the obtained point cloud data using point cloud library (PCL).}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------Relevant Coursework-----------
+\section{Relevant Coursework}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+   Stanford 236 Deep Generative Models, HTM Theory by Numenta, Linear Algebra by Gilbert Strang
+  }}
+\end{itemize}
+  
+
+%
+%-------------------------------------------
+\end{document}
