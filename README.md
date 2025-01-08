@@ -22,4 +22,4 @@ pdflatex ajay_resume.tex
 ```bash
 magick -density 300 ajay_resume.pdf resume.jpg
 ```
-![Resume Preview](ajay_resume.jpg)
+![Resume Preview](./images/resume.jpg)
